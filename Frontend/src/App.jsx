@@ -13,6 +13,8 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Login from "./auth/Login";
 import {Routes,Route} from 'react-router-dom';
+import Ref from "./hooks/Ref";
+import Reducer from "./hooks/Reducer";
 const App = () => {
   return (
     <>
@@ -28,9 +30,11 @@ const App = () => {
          <Route path="form" element={<Form/>}/>
           <Route path="effect" element={<Effect/>}/>
         <Route path="effectwithApi" element={<EffectwithApi/>}/>
+        <Route path="useRef" element={<Ref/>}/>
       </Route>
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/signup" element={<Signup/>}></Route>
+      <Route path="useReducer" element={<Reducer/>}></Route>
 
     </Routes>
     </>
