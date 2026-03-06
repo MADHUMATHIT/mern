@@ -1,5 +1,5 @@
 import React from 'react'
-import Child from './Child'
+import Child from '../pages/Child'
 
 const Parent = ({message}) => {
   return (
