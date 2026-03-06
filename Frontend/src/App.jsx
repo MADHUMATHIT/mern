@@ -15,7 +15,7 @@ import Login from "./auth/Login";
 import {Routes,Route} from 'react-router-dom';
 import Ref from "./hooks/Ref";
 import Reducer from "./hooks/Reducer";
-import Memo from "./hooks/memo";
+import Memo from "./hooks/Memo";
 import Callback from "./hooks/Callback";
 import Todo from "./components/Todo";
 
