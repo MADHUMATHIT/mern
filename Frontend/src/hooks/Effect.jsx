@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react'
 
 const Effect = () => {
     const[count,setCount] =useState(0);
-    const[value,setValue]=useState
+    const[value,setValue]=useState(0);
 
     useEffect(()=>{
         console.log("useEffect Mounted")

@@ -8,11 +8,10 @@ const Todo = () => {
     }])
     const [edit,setEdit]=useState(null);         
     //  instead of null if we place the condition it will change add to update
-    const handleAddOrEdit=(e)=>{
-        e.preventDefault();
+    const handleAddOrEdit=()=>{
         if(edit||edit==0){
             setTodos(todos.map((todo,i)=>(
-                index===i?{...todo,task:task}:todo
+                edit===i?{...todo,task:task}:todo
             )))
             setEdit(null);
 
@@ -29,7 +28,7 @@ const Todo = () => {
     const handleDelete=(index)=>{
         setTodos(todos.filter((_,i)=>index!=i))
     };
-    const handleToggleStatus=()=>{
+    const handleToggleStatus=(index)=>{
         setTodos(todos.map((todo,i)=>(
             index===i?{...todo,status:!todo.status}:todo
         )))

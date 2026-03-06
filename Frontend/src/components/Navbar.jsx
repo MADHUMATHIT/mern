@@ -17,15 +17,15 @@ const Navbar = () => {
                 <li className="list">
                     <Link to="/services" className="link">Services</Link>
                 </li>
-                <li className="list">
+                {/* <li className="list">
                      <Link to="/state" className="link">useState</Link>
-                </li>
+                </li> */}
                 <li className="list">
                      <Link to="/hooks" className="link">Hooks</Link>
                 </li>
-                     <li className="list">
+                     {/* <li className="list">
                      <Link to="/effect" className="link">Effect</Link>
-                </li>
+                </li> */}
                 <li className="list">
                      <Link to="/todo" className="link">Todo</Link>
                 </li>
