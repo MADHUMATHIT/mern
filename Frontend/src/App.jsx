@@ -15,6 +15,10 @@ import Login from "./auth/Login";
 import {Routes,Route} from 'react-router-dom';
 import Ref from "./hooks/Ref";
 import Reducer from "./hooks/Reducer";
+import Memo from "./hooks/memo";
+import Callback from "./hooks/Callback";
+import Todo from "./components/Todo";
+
 const App = () => {
   return (
     <>
@@ -31,13 +35,18 @@ const App = () => {
           <Route path="effect" element={<Effect/>}/>
         <Route path="effectwithApi" element={<EffectwithApi/>}/>
         <Route path="useRef" element={<Ref/>}/>
+        <Route path="useReducer" element={<Reducer/>}></Route>
+        <Route path="useMemo" element={<Memo/>}></Route>
+        <Route path="useCallback" element={<Callback/>}></Route>
+
       </Route>
+      <Route path="/todo" element={<Todo/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/signup" element={<Signup/>}></Route>
-      <Route path="useReducer" element={<Reducer/>}></Route>
-
+      
     </Routes>
     </>
   )
 }
 export default App
+
