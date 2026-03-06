@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Parent from "./components/Parent";
 import Effect from "./hooks/Effect";
 import EffectwithApi from "./hooks/EffectwithApi";
-import Form from "./hooks/form";
+import Form from "./hooks/Form";
 import Hooks from "./hooks/Hooks";
 import State from "./hooks/State";
 import About from "./pages/About";
